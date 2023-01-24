@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.fad34b17.js",
-    "static/js/787.b7197cb2.chunk.js": "/static/js/787.b7197cb2.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.fad34b17.js.map": "/static/js/main.fad34b17.js.map",
-    "787.b7197cb2.chunk.js.map": "/static/js/787.b7197cb2.chunk.js.map"
+    "main.css": "/spectrumsoft-live/static/css/main.073c9b0a.css",
+    "main.js": "/spectrumsoft-live/static/js/main.68ba3531.js",
+    "static/js/787.b7197cb2.chunk.js": "/spectrumsoft-live/static/js/787.b7197cb2.chunk.js",
+    "index.html": "/spectrumsoft-live/index.html",
+    "main.073c9b0a.css.map": "/spectrumsoft-live/static/css/main.073c9b0a.css.map",
+    "main.68ba3531.js.map": "/spectrumsoft-live/static/js/main.68ba3531.js.map",
+    "787.b7197cb2.chunk.js.map": "/spectrumsoft-live/static/js/787.b7197cb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.fad34b17.js"
+    "static/js/main.68ba3531.js"
   ]
 }
