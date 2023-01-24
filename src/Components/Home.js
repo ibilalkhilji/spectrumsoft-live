@@ -475,7 +475,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>*/}
-                <div id="blog" className="blog-area default-padding bottom-less">
+                {/*<div id="blog" className="blog-area default-padding bottom-less">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2">
@@ -577,7 +577,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div*/}>
                 <div className="testimonials-area bg-gray default-padding">
                     <div className="container">
                         <div className="row">
@@ -641,7 +641,7 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className="subscribe-area bg-fixed shadow dark text-light default-padding text-center"
+                {/*<div className="subscribe-area bg-fixed shadow dark text-light default-padding text-center"
                      style={{backgroundImage: 'url("assets/img/banner/4.jpg")'}}>
                     <div className="container">
                         <div className="row">
@@ -664,7 +664,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*/}
                 <div id="contact" className="contact-us-area default-padding">
                     <div className="container">
                         <div className="row">
