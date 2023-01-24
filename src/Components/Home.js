@@ -96,7 +96,7 @@ class Home extends Component {
                                     <div className="row align-center">
                                         <div className="col-lg-5 left-info simple-video">
                                             <div className="content" data-animation="animated fadeInUpBig">
-                                                <h1>We're building software for you</h1>
+                                                <h1>Leading Software in Cable and Broadband market</h1>
                                                 <p>
                                                     Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant
                                                     in in insensible favourable. Latter remark hunted enough.
@@ -177,11 +177,7 @@ class Home extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 info">
-                                <h3>Trusted by the world's best Companies</h3>
-                                <p>
-                                    Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son
-                                    themselves.
-                                </p>
+                                <h3>Trusted by the companies</h3>
                             </div>
                             <div className="col-lg-8 clients">
                                 <div className="clients-items owl-carousel owl-theme text-center">
@@ -672,10 +668,10 @@ class Home extends Component {
                             <div className="col-lg-8 offset-lg-2">
                                 <div className="site-heading text-center">
                                     <h2>Contact Us</h2>
-                                    <p>
+                                    {/*<p>
                                         Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably
                                         conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose.
-                                    </p>
+                                    </p>*/}
                                 </div>
                             </div>
                         </div>
