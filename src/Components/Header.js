@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {withRouter} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import {$} from 'react-jquery-plugin'
+import {Constants} from "../Library/Constants";
 
 
 class Header extends Component {
@@ -37,21 +38,21 @@ class Header extends Component {
                 <header id="home">
                     <nav className="navbar navbar-default navbar-fixed white no-background bootsnav">
                         <div className="container">
-                            <div className="attr-nav button inc-border">
+                            {/*<div className="attr-nav button inc-border">
                                 <ul>
                                     <li>
                                         <a href="#">Sign In</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>*/}
                             <div className="navbar-header">
                                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                     <i className="fa fa-bars"/>
                                 </button>
-                                <a className="navbar-brand" href="index.html">
-                                    <img src="assets/img/logo-light.png" className="logo logo-display" alt="Logo"/>
-                                    <img src="assets/img/logo.png" className="logo logo-scrolled" alt="Logo"/>
-                                </a>
+                                <Link className="navbar-brand" to="#home">
+                                    <img src={Constants.COMPANY.LOGO} className="logo logo-display" alt="Logo"/>
+                                    <img src={Constants.COMPANY.LOGO} className="logo logo-scrolled" alt="Logo"/>
+                                </Link>
                             </div>
                             <div className="collapse navbar-collapse" id="navbar-menu">
                                 <ul className="nav navbar-nav navbar-right" data-in="#" data-out="#">
@@ -67,12 +68,12 @@ class Header extends Component {
                                     <li>
                                         <a className="smooth-menu" href="#overview">Overview</a>
                                     </li>
-                                    <li>
+                                   {/* <li>
                                         <a className="smooth-menu" href="#pricing">Pricing</a>
                                     </li>
                                     <li>
                                         <a className="smooth-menu" href="#blog">Blog</a>
-                                    </li>
+                                    </li>*/}
                                     <li>
                                         <a className="smooth-menu" href="#contact">contact</a>
                                     </li>

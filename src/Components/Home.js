@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
 import {$} from 'react-jquery-plugin'
 import SEO from "../Library/SEO";
+import {Constants} from "../Library/Constants";
 
 const initState = {
     features: [
@@ -685,15 +686,15 @@ class Home extends Component {
                                     <ul className="info">
                                         <li>
                                             <i className="fas fa-map-marked-alt"/>
-                                            <span>22 Baker Street,<br/> London, United Kingdom,<br/> W1U 3BW</span>
+                                            <span>{Constants.COMPANY.ADDRESS}</span>
                                         </li>
                                         <li>
                                             <i className="fas fa-phone"/>
-                                            <span>+44-20-7328-4499</span>
+                                            <span>{Constants.COMPANY.CONTACT}</span>
                                         </li>
                                         <li>
                                             <i className="fas fa-envelope-open"/>
-                                            <span>info@yourdomain.com</span>
+                                            <span>{Constants.COMPANY.EMAIL}</span>
                                         </li>
                                     </ul>
                                     <h4>Social Address</h4>
@@ -713,7 +714,7 @@ class Home extends Component {
                                     </ul>
                                     <div className="google-maps">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"/>
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.4033357594667!2d72.9904284312199!3d26.280692073704657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418f712d0a1c71%3A0x908bcf5540be1fea!2sSpectrum%20Soft!5e0!3m2!1sen!2sin!4v1674562980165!5m2!1sen!2sin"/>
                                     </div>
                                 </div>
                             </div>

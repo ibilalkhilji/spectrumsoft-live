@@ -1,5 +1,6 @@
 export const Constants = {
     COMPANY: {
+        LOGO: "https://spectrum.khaleejinfo.tech/assets/logos/8YAnYHVA_dark.png",
         NAME: "SpectrumSoft",
         ADDRESS: "1st Floor, Ganeshyam Plaza, Near Sunita TVS, Pratap Nagar Road, Akhliya, Jodhpur Rajasthan - 342003",
         LOCALITY: "Jodhpur",
