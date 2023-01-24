@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 
 function App() {
     return (
-        <Router>
+        <Router /*basename="/spectrumsoft-live"*/>
             <Header/>
             <Switch>
                 <Route exact path="/" component={Home}/>

@@ -3,6 +3,7 @@ import {withRouter} from "react-router-dom";
 import {$} from 'react-jquery-plugin'
 import SEO from "../Library/SEO";
 import {Constants} from "../Library/Constants";
+import {getAsset} from "../Library/Asset";
 
 const initState = {
     features: [
@@ -105,13 +106,13 @@ class Home extends Component {
                                             </div>
                                         </div>
                                         <div className="col-lg-7 right-info width-max">
-                                            <img src="/assets/img/illustration/5.png" alt="Thumb"/>
+                                            <img src={getAsset('assets/img/illustration/5.png')} alt="Thumb"/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="wavesshape">
-                                <img src="/assets/img/shape/2.png" alt="Shape"/>
+                                <img src={getAsset('assets/img/shape/2.png')} alt="Shape"/>
                             </div>
                         </div>
                     </div>
@@ -137,7 +138,7 @@ class Home extends Component {
                                         <div className="row">
                                             <div className="col-lg-4 col-md-6 single-item">
                                                 <div className="item">
-                                                    <img src="/assets/img/icon/1.svg" alt="Icon"/>
+                                                    <img src={getAsset('assets/img/icon/1.svg')} alt="Icon"/>
                                                     <h4>Live messaging</h4>
                                                     <p>
                                                         Downs those still witty an balls so chief so. Moment an little remain no lively. Cultivated an up
@@ -147,7 +148,7 @@ class Home extends Component {
                                             </div>
                                             <div className="col-lg-4 col-md-6 single-item">
                                                 <div className="item">
-                                                    <img src="/assets/img/icon/2.svg" alt="Icon"/>
+                                                    <img src={getAsset('assets/img/icon/2.svg')} alt="Icon"/>
                                                     <h4>Email workflow</h4>
                                                     <p>
                                                         Downs those still witty an balls so chief so. Moment an little remain no lively. Cultivated an up
@@ -157,7 +158,7 @@ class Home extends Component {
                                             </div>
                                             <div className="col-lg-4 col-md-6 single-item">
                                                 <div className="item">
-                                                    <img src="/assets/img/icon/3.svg" alt="Icon"/>
+                                                    <img src={getAsset('assets/img/icon/3.svg')} alt="Icon"/>
                                                     <h4>File upload</h4>
                                                     <p>
                                                         Downs those still witty an balls so chief so. Moment an little remain no lively. Cultivated an up
@@ -182,31 +183,31 @@ class Home extends Component {
                             <div className="col-lg-8 clients">
                                 <div className="clients-items owl-carousel owl-theme text-center">
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/1.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/1.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/2.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/2.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/3.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/3.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/4.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/4.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/5.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/5.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/6.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/6.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/7.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/7.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/8.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/8.png')} alt="Clients"/></a>
                                     </div>
                                     <div className="single-item">
-                                        <a href="#"><img src="/assets/img/clients/9.png" alt="Clients"/></a>
+                                        <a href="#"><img src={getAsset('assets/img/clients/9.png')} alt="Clients"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +220,7 @@ class Home extends Component {
                         <div className="choseus-items">
                             <div className="row align-center">
                                 <div className="col-lg-6 thumb">
-                                    <img src="/assets/img/illustration/6.png" alt="Thumb"/>
+                                    <img src={getAsset('assets/img/illustration/6.png')} alt="Thumb"/>
                                 </div>
                                 <div className="col-lg-6 info">
                                     <h5>Why Choose Us</h5>
@@ -283,9 +284,9 @@ class Home extends Component {
                         <div className="row">
                             <div className="col-lg-12 col-md-12 text-center overview-items">
                                 <div className="overview-carousel owl-carousel owl-theme">
-                                    <img src="/assets/img/app/screnshoot-1.jpg" alt="Thumb"/>
-                                    <img src="/assets/img/app/screnshoot-2.jpg" alt="Thumb"/>
-                                    <img src="/assets/img/app/screnshoot-3.jpg" alt="Thumb"/>
+                                    <img src={getAsset('assets/img/app/screnshoot-1.jpg')}   alt="Thumb"/>
+                                    <img src={getAsset('assets/img/app/screnshoot-2.jpg')} alt="Thumb"/>
+                                    <img src={getAsset('assets/img/app/screnshoot-3.jpg')} alt="Thumb"/>
                                 </div>
                             </div>
                         </div>
@@ -390,7 +391,7 @@ class Home extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="item">
                                         <div className="thumb">
-                                            <img src="/assets/img/team/7.jpg" alt="Thumb"/>
+                                            <img src={getAsset('assets/img/team/7.jpg')} alt="Thumb"/>
                                             <div className="social">
                                                 <ul>
                                                     <li className="facebook">
@@ -417,7 +418,7 @@ class Home extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="item">
                                         <div className="thumb">
-                                            <img src="/assets/img/team/8.jpg" alt="Thumb"/>
+                                            <img src={getAsset('assets/img/team/8.jpg')} alt="Thumb"/>
                                             <div className="social">
                                                 <ul>
                                                     <li className="facebook">
@@ -444,7 +445,7 @@ class Home extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="item">
                                         <div className="thumb">
-                                            <img src="/assets/img/team/9.jpg" alt="Thumb"/>
+                                            <img src={getAsset('assets/img/team/9.jpg')} alt="Thumb"/>
                                             <div className="social">
                                                 <ul>
                                                     <li className="facebook">
@@ -491,7 +492,7 @@ class Home extends Component {
                                     <div className="item">
                                         <div className="thumb">
                                             <a href="single.html">
-                                                <img src="/assets/img/blog/4.jpg" alt="Thumb"/>
+                                                <img src={getAsset('assets/img/blog/4.jpg')} alt="Thumb"/>
                                                 <div className="post-type">
                                                     <i className="fas fa-image"/>
                                                 </div>
@@ -519,7 +520,7 @@ class Home extends Component {
                                     <div className="item">
                                         <div className="thumb">
                                             <a href="single.html">
-                                                <img src="/assets/img/blog/2.jpg" alt="Thumb"/>
+                                                <img src={getAsset('assets/img/blog/2.jpg')} alt="Thumb"/>
                                                 <div className="post-type">
                                                     <i className="fas fa-video"/>
                                                 </div>
@@ -547,7 +548,7 @@ class Home extends Component {
                                     <div className="item">
                                         <div className="thumb">
                                             <a href="single.html">
-                                                <img src="/assets/img/blog/3.jpg" alt="Thumb"/>
+                                                <img src={getAsset('assets/img/blog/3.jpg')} alt="Thumb"/>
                                                 <div className="post-type">
                                                     <i className="fas fa-images"/>
                                                 </div>
@@ -622,13 +623,13 @@ class Home extends Component {
                                         </div>
                                         <ol className="carousel-indicators">
                                             <li data-target="#testimonial-carousel" data-slide-to="0" className="active">
-                                                <img src="/assets/img/team/4.jpg" alt="Thumb"/>
+                                                <img src={getAsset('assets/img/team/4.jpg')} alt="Thumb"/>
                                             </li>
                                             <li data-target="#testimonial-carousel" data-slide-to="1">
-                                                <img src="/assets/img/team/2.jpg" alt="Thumb"/>
+                                                <img src={getAsset('assets/img/team/2.jpg')} alt="Thumb"/>
                                             </li>
                                             <li data-target="#testimonial-carousel" data-slide-to="2">
-                                                <img src="/assets/img/team/9.jpg" alt="Thumb"/>
+                                                <img src={getAsset('assets/img/team/9.jpg')} alt="Thumb"/>
                                             </li>
                                         </ol>
                                     </div>
@@ -710,13 +711,13 @@ class Home extends Component {
                                     </ul>
                                     <div className="google-maps">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.4033357594667!2d72.9904284312199!3d26.280692073704657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418f712d0a1c71%3A0x908bcf5540be1fea!2sSpectrum%20Soft!5e0!3m2!1sen!2sin!4v1674562980165!5m2!1sen!2sin"/>
+                                            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.4033357594667!2d72.9904284312199!3d26.280692073704657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418f712d0a1c71%3A0x908bcf5540be1fea!2sSpectrum%20Soft!5e0!3m2!1sen!2sin!4v1674562980165!5m2!1sen!2sin'/>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6 contact-form">
                                 <h2>Let's lalk about your idea</h2>
-                                <form action="https://validthemes.live/themeforest/softing/assets/mail/contact.php" method="POST" className="contact-form">
+                                <form action="/" method="POST" className="contact-form">
                                     <div className="col-lg-12">
                                         <div className="row">
                                             <div className="form-group">
@@ -780,7 +781,7 @@ class Home extends Component {
                         </div>
                         <div className="row">
                             <div className="col-lg-6 thumb">
-                                <img src="/assets/img/banner/contact.png" alt="Thumb"/>
+                                <img src={getAsset('assets/img/banner/contact.png')} alt="Thumb"/>
                             </div>
                             <div className="col-lg-6 faq-items default-padding-bottom">
 
