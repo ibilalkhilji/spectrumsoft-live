@@ -668,7 +668,6 @@ class Home extends Component {
                             <div className="col-lg-8 offset-lg-2">
                                 <div className="site-heading text-center">
                                     <h2>Contact Us</h2>
-                                    <p>dsd</p>
                                     {/*<p>
                                         Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably
                                         conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose.
