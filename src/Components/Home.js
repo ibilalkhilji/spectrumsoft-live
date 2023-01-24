@@ -294,6 +294,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                {/*
                 <div id="pricing" className="pricing-area default-padding bottom-less">
                     <div className="container">
                         <div className="row">
@@ -373,7 +374,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div id="team" className="team-area bg-gray default-padding bottom-less">
+*/}
+                {/*<div id="team" className="team-area bg-gray default-padding bottom-less">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2">
@@ -472,7 +474,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*/}
                 <div id="blog" className="blog-area default-padding bottom-less">
                     <div className="container">
                         <div className="row">
