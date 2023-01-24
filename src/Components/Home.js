@@ -1,9 +1,88 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
+import {$} from 'react-jquery-plugin'
 import SEO from "../Library/SEO";
 
+const initState = {
+    features: [
+        {
+            title: "Manage Subscribers", content: "Manage Your Cable TV & Broadband Subscribers billing"
+        },
+        {
+            title: "Complete Inventory", content: "Complete Inventory"
+        },
+        {
+            title: "Live Tracking", content: "Live Tracking of your Employees on Map"
+        },
+        {
+            title: "Surveys", content: "Online Survey & Customers Enquires"
+        },
+        {
+            title: "Payment links", content: "Share Payment Link to collect customers outstanding"
+        },
+        {
+            title: "Online Payments",
+            content: "Subscribers can make online payment, Generate complaints, View Payment History, Upload Documents, Renew & Change their Packages"
+        },
+        {
+            title: "Share Receipts & Invoices", content: "Share receipts & Invoices on whatsApp"
+        },
+        {
+            title: "Ease of access", content: "Manage Grid view as per your need"
+        },
+        {
+            title: "Income & Expenses", content: "Income & Expenses"
+        },
+        {
+            title: "Manage Customers & Inventory",
+            content: "Manage your customer & Inventory (Node, OLT, JC Boxes, Splitters, Bottles etc.) location & Draw Your Network"
+        },
+        {
+            title: "Attendance & Salary", content: "Employee Attendance & Salary Management"
+        },
+    ]
+
+}
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = initState;
+    }
+
+    componentDidMount() {
+        $('.clients-items').owlCarousel({
+            loop: false,
+            margin: 20,
+            nav: true,
+            navText: [
+                "<i class='fa fa-angle-left'></i>",
+                "<i class='fa fa-angle-right'></i>"
+            ],
+            dots: false,
+            autoplay: true,
+            responsive: {
+                0: {items: 1},
+                600: {items: 2},
+                1000: {items: 3}
+            }
+        });
+
+        $('.overview-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+            dots: true,
+            autoplay: true,
+            center: true,
+            items: 1,
+            margin: 30,
+            stagePadding: 10,
+            responsive: {600: {items: 1, stagePadding: 200}}
+        });
+
+    }
+
     render() {
         return (
             <>
@@ -92,6 +171,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+
                 <div className="companies-area default-padding">
                     <div className="container">
                         <div className="row">
@@ -136,7 +216,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div id="choseus" className="choseus-area default-padding bg-theme-small">
+
+                {/*<div id="choseus" className="choseus-area default-padding bg-theme-small">
                     <div className="container">
                         <div className="choseus-items">
                             <div className="row align-center">
@@ -155,100 +236,36 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*/}
+
                 <div id="features" className="features-area default-padding bottom-small">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2">
                                 <div className="site-heading text-center">
                                     <h2>Our Features</h2>
-                                    <p>
+                                    {/*<p>
                                         Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably
                                         conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose.
-                                    </p>
+                                    </p>*/}
                                 </div>
                             </div>
                         </div>
                         <div className="features-items">
                             <div className="row">
-                                <div className="col-lg-4 col-md-6 single-item">
-                                    <div className="item">
-                                        <div className="icon">
-                                            <i className="flaticon-scroll"/>
+                                {this.state.features.map((feature, key) => {
+                                    return (
+                                        <div className="col-lg-4 col-md-6 single-item" key={key}>
+                                            <div className="item">
+                                                {/*<div className="icon"><i className="flaticon-scroll"/></div>*/}
+                                                <div className="info">
+                                                    <h4>{feature.title}</h4>
+                                                    {feature.content !== '' ? <p>{feature.content}</p> : ''}
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="info">
-                                            <h4>Drag and drop</h4>
-                                            <p>
-                                                Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 single-item">
-                                    <div className="item">
-                                        <div className="icon">
-                                            <i className="flaticon-feature"/>
-                                        </div>
-                                        <div className="info">
-                                            <h4>Fully customizable</h4>
-                                            <p>
-                                                Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 single-item">
-                                    <div className="item">
-                                        <div className="icon">
-                                            <i className="flaticon-intersect"/>
-                                        </div>
-                                        <div className="info">
-                                            <h4>App integration</h4>
-                                            <p>
-                                                Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 single-item">
-                                    <div className="item">
-                                        <div className="icon">
-                                            <i className="flaticon-intersection"/>
-                                        </div>
-                                        <div className="info">
-                                            <h4>Color Schemes</h4>
-                                            <p>
-                                                Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 single-item">
-                                    <div className="item">
-                                        <div className="icon">
-                                            <i className="flaticon-resolution"/>
-                                        </div>
-                                        <div className="info">
-                                            <h4>High Resolution</h4>
-                                            <p>
-                                                Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 single-item">
-                                    <div className="item">
-                                        <div className="icon">
-                                            <i className="flaticon-showcase"/>
-                                        </div>
-                                        <div className="info">
-                                            <h4>Perfect Showcase</h4>
-                                            <p>
-                                                Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
@@ -259,10 +276,10 @@ class Home extends Component {
                             <div className="col-lg-8 offset-lg-2">
                                 <div className="site-heading text-center">
                                     <h2>Quick Software Overview</h2>
-                                    <p>
+                                    {/*<p>
                                         Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably
                                         conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose.
-                                    </p>
+                                    </p>*/}
                                 </div>
                             </div>
                         </div>
