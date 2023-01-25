@@ -7,9 +7,12 @@
 
 # testing
 /coverage
+/public/softing
 
 # production
 /build
+
+/package-lock.json
 
 # misc
 .DS_Store

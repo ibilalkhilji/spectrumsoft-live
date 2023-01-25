@@ -77,7 +77,7 @@ class Footer extends Component {
                             <div className="col-lg-12">
                                 <div className="row">
                                     <div className="col-lg-6">
-                                        <p>&copy; Copyright {new Date().getFullYear()}. Developed by <Link to={{pathname:"https://khaleejinfotech.com"}} target="_blank">KHALEEJ Infotech</Link>
+                                        <p>&copy; Copyright {new Date().getFullYear()}. Developed by <a href="https://khaleejinfotech.com" target="_blank">KHALEEJ Infotech</a>
                                         </p>
                                     </div>
                                     <div className="col-lg-6 text-right link">
