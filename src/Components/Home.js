@@ -96,7 +96,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                         <div className="col-lg-7 right-info width-max">
-                                            <img src={'assets/img/illustration/5.png'} alt="Thumb"/>
+                                            <img src={getAsset('assets/img/app/app-screen.png')} alt="Thumb"/>
                                         </div>
                                     </div>
                                 </div>
