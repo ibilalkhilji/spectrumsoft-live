@@ -8,42 +8,32 @@ import {getAsset} from "../Library/Asset";
 const initState = {
     features: [
         {
-            title: "Manage Subscribers", content: "Manage Your Cable TV & Broadband Subscribers billing"
+            title: "Manage Subscribers, Share Receipts & Invoices", content: "Manage Your Cable TV & Broadband Subscribers billing, Share receipts & Invoices on whatsApp"
         },
         {
-            title: "Complete Inventory", content: "Complete Inventory"
+            title: "Live Tracking, Attendance & Salary", content: "Live Tracking of your Employees on Map, manage employees attendance & salary."
         },
         {
-            title: "Live Tracking", content: "Live Tracking of your Employees on Map"
-        },
-        {
-            title: "Surveys", content: "Online Survey & Customers Enquires"
-        },
-        {
-            title: "Payment links", content: "Share Payment Link to collect customers outstanding"
+            title: "Payment Links & Surveys", content: "Share Payment Link to collect customers outstanding. Take Online Survey & Customers Enquires"
         },
         {
             title: "Online Payments",
             content: "Subscribers can make online payment, Generate complaints, View Payment History, Upload Documents, Renew & Change their Packages"
         },
         {
-            title: "Share Receipts & Invoices", content: "Share receipts & Invoices on whatsApp"
-        },
-        {
-            title: "Ease of access", content: "Manage Grid view as per your need"
-        },
-        {
-            title: "Income & Expenses", content: "Income & Expenses"
+            title: "Fully Customizable", content: "Manage Grid view as per your need, control over packages for different platforms."
         },
         {
             title: "Manage Customers & Inventory",
             content: "Manage your customer & Inventory (Node, OLT, JC Boxes, Splitters, Bottles etc.) location & Draw Your Network"
         },
-        {
-            title: "Attendance & Salary", content: "Employee Attendance & Salary Management"
-        },
-    ]
-
+    ],
+    screenshots: [
+        {path: getAsset('assets/img/app/screnshoot-1.png')},
+        {path: getAsset('assets/img/app/screnshoot-2.png')},
+        {path: getAsset('assets/img/app/screnshoot-3.png')},
+        {path: getAsset('assets/img/app/screnshoot-4.png')},
+    ],
 }
 
 class Home extends Component {
@@ -106,7 +96,7 @@ class Home extends Component {
                                             </div>
                                         </div>
                                         <div className="col-lg-7 right-info width-max">
-                                            <img src={getAsset('assets/img/illustration/5.png')} alt="Thumb"/>
+                                            <img src={'assets/img/illustration/5.png'} alt="Thumb"/>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +115,6 @@ class Home extends Component {
                                 <div className="col-lg-8 offset-lg-2">
                                     <div className="about-content text-center">
                                         <h4>About Us</h4>
-                                        <h2>What is Softing? </h2>
                                         <p>
                                             Ignorant saw her her drawings marriage laughter. Case oh an that or away sigh do here upon. Acuteness you exquisite
                                             ourselves now end forfeited. Enquire ye without it garrets up himself. Interest our nor received followed was.
@@ -139,31 +128,26 @@ class Home extends Component {
                                             <div className="col-lg-4 col-md-6 single-item">
                                                 <div className="item">
                                                     <img src={getAsset('assets/img/icon/1.svg')} alt="Icon"/>
-                                                    <h4>Live messaging</h4>
+                                                    <h4>Live Tracking</h4>
                                                     <p>
-                                                        Downs those still witty an balls so chief so. Moment an little remain no lively. Cultivated an up
-                                                        solicitude.
+                                                        Track your infrastructure, clients and staff real-time.
                                                     </p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-6 single-item">
                                                 <div className="item">
                                                     <img src={getAsset('assets/img/icon/2.svg')} alt="Icon"/>
-                                                    <h4>Email workflow</h4>
+                                                    <h4>Share Invoice & Receipt</h4>
                                                     <p>
-                                                        Downs those still witty an balls so chief so. Moment an little remain no lively. Cultivated an up
-                                                        solicitude.
+                                                        Easily share the receipt or invoice to the customer via SMS, Email and WhatsApp.
                                                     </p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-4 col-md-6 single-item">
                                                 <div className="item">
                                                     <img src={getAsset('assets/img/icon/3.svg')} alt="Icon"/>
-                                                    <h4>File upload</h4>
-                                                    <p>
-                                                        Downs those still witty an balls so chief so. Moment an little remain no lively. Cultivated an up
-                                                        solicitude.
-                                                    </p>
+                                                    <h4>Surveys</h4>
+                                                    <p>Take surveys from the customer to know more about their interests.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,7 +158,7 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className="companies-area default-padding">
+                {/* <div className="companies-area default-padding">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 info">
@@ -213,7 +197,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*/}
 
                 {/*<div id="choseus" className="choseus-area default-padding bg-theme-small">
                     <div className="container">
@@ -254,9 +238,9 @@ class Home extends Component {
                                 {this.state.features.map((feature, key) => {
                                     return (
                                         <div className="col-lg-4 col-md-6 single-item" key={key}>
-                                            <div className="item">
+                                            <div className="card shadow-sm">
                                                 {/*<div className="icon"><i className="flaticon-scroll"/></div>*/}
-                                                <div className="info">
+                                                <div className="card-body info">
                                                     <h4>{feature.title}</h4>
                                                     {feature.content !== '' ? <p>{feature.content}</p> : ''}
                                                 </div>
@@ -284,9 +268,11 @@ class Home extends Component {
                         <div className="row">
                             <div className="col-lg-12 col-md-12 text-center overview-items">
                                 <div className="overview-carousel owl-carousel owl-theme">
-                                    <img src={getAsset('assets/img/app/screnshoot-1.jpg')}   alt="Thumb"/>
-                                    <img src={getAsset('assets/img/app/screnshoot-2.jpg')} alt="Thumb"/>
-                                    <img src={getAsset('assets/img/app/screnshoot-3.jpg')} alt="Thumb"/>
+                                    {this.state.screenshots.map((screenshot, key) => {
+                                        return (
+                                            <img src={screenshot.path} alt="Thumb"/>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -597,8 +583,8 @@ class Home extends Component {
                                                     see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be
                                                     removal.
                                                 </p>
-                                                <h4>Junl Sarukh</h4>
-                                                <span>CEO of Softing</span>
+                                                <h4>Anil Spia</h4>
+                                                <span>Director of Softing</span>
                                             </div>
                                             <div className="carousel-item">
                                                 <span className="quote"/>
@@ -607,8 +593,8 @@ class Home extends Component {
                                                     see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be
                                                     removal.
                                                 </p>
-                                                <h4>Anil Spia</h4>
-                                                <span>Director of Softing</span>
+                                                <h4>Paul Munni</h4>
+                                                <span>Developer of Softing</span>
                                             </div>
                                             <div className="carousel-item">
                                                 <span className="quote"/>

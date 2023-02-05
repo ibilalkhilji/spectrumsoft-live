@@ -19,8 +19,8 @@ class Footer extends Component {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-md-6 item">
-                                    <div className="f-item link">
+                                <div className="col-lg-2 col-md-5 item">
+                                    {/*<div className="f-item link">
                                         <h4>Quick LInk</h4>
                                         <ul>
                                             <li>
@@ -39,9 +39,9 @@ class Footer extends Component {
                                                 <a href="#"><i className="fas fa-angle-right"/> Blog Page</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div>*/}
                                 </div>
-                                <div className="col-lg-3 col-md-6 item">
+                                <div className="col-lg-4 col-md-7 item">
                                     <div className="f-item twitter-widget">
                                         <h4>Contact Info</h4>
                                         <p>
@@ -80,7 +80,7 @@ class Footer extends Component {
                                         <p>&copy; Copyright {new Date().getFullYear()}. Developed by <a href="https://khaleejinfotech.com" target="_blank">KHALEEJ Infotech</a>
                                         </p>
                                     </div>
-                                    <div className="col-lg-6 text-right link">
+                                    {/*<div className="col-lg-6 text-right link">
                                         <ul>
                                             <li>
                                                 <a href="#">Terms of user</a>
@@ -92,7 +92,7 @@ class Footer extends Component {
                                                 <a href="#">Support</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div>*/}
                                 </div>
                             </div>
                         </div>
