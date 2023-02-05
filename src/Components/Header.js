@@ -22,11 +22,13 @@ class Header extends Component {
 
         /* ========== Smooth Scroll ========== */
         $('a.smooth-menu').on('click', function (event) {
+            let menuToggle = $('.navbar-toggle')
             let $anchor = $(this);
             let headerH = '75';
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
             }, 1500, 'easeInOutExpo');
+            menuToggle.click()
             event.preventDefault();
         });
     }
