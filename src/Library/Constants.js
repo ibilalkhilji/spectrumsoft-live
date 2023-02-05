@@ -1,5 +1,5 @@
 export const Constants = {
-    BASE_PATH: window.location.origin + '/', // trailing slash must
+    BASE_PATH: window.location.origin + '/spectrumsoft-live/', // trailing slash must
     COMPANY: {
         LOGO: "https://spectrum.khaleejinfo.tech/assets/logos/8YAnYHVA_dark.png",
         NAME: "SpectrumSoft",
